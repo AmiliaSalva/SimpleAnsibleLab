@@ -31,12 +31,14 @@ In today's rapidly evolving IT landscape, automation plays a pivotal role. Lever
   - **YUM:**
         The package manager for our CentOS servers. Through YUM, we managed software packages, ensuring the latest versions were installed and dependencies were met.
 
-
+ <br />
+ <br />
 
 ## Lab Setup:
 
 For this lab, we've leveraged Linode to set up 3 cloud servers. One of these servers will act as the control station or "master", from which Ansible commands will be dispatched. The other two servers will be our "worker" nodes, which will receive commands and configurations from the master.
-Control Station Setup:
+
+## Control Station Setup:
 
 After deploying our control station on Linode, we initiate it with the following bash script:
 
@@ -50,10 +52,12 @@ After deploying our control station on Linode, we initiate it with the following
 
 ## What does this script do?
 
-    yum update -y: Updates all packages on the system to the latest version.
-    yum install epel-release -y: Installs the EPEL (Extra Packages for Enterprise Linux) repository, providing extra packages for CentOS.
-    yum install ansible -y: Installs Ansible, our automation tool.
+- `yum update -y`: Updates all packages on the system to the latest version.
+- `yum install epel-release -y`: Installs the EPEL (Extra Packages for Enterprise Linux) repository, providing extra packages for CentOS.
+- `yum install ansible -y`: Installs Ansible, our automation tool.
 
+    
+    
 After this, two additional CentOS servers will be deployed, which will act as our worker nodes.
 Configuration:
 
@@ -66,13 +70,13 @@ With the servers up and running, we'll use Solar PuTTY to SSH into the control s
 Inside this directory, you'll find key configuration files: ``ansible.cfg`` and hosts.
 Setting Up the Hosts:
 
-Edit the hosts file:
-
+Edit the hosts file with the following command:
+**(Note: If you're not logged in as root, prefix the command with ``sudo``.)**
 
 
     vi hosts
 
-(Note: If you're not logged in as root, prefix the command with ``sudo``.)
+
 
 Within the ``hosts`` file:
 
@@ -91,6 +95,22 @@ Configure group variables:
     [linux:vars]
     ansible_user=root
     ansible_password=YOUR_DEFINED_PASSWORD
+
+<br />
+ 
+### It should look something like this in the SSH client:
+<details close>
+<summary>EXAMPLE:</summary>
+
+
+![sshclientexample](https://github.com/AmiliaSalva/SimpleAnsibleLab/assets/132176058/3f93b678-0468-4cb7-a746-d3184a913256)
+
+
+
+
+</details>
+ <br />
+ <br />
 
 ## Why do this?
 
