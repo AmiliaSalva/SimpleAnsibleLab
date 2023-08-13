@@ -4,7 +4,14 @@
 
 
 ## Introduction
-In my journey through IT automation, I've come to appreciate the elegance and power of Ansible with this lab. This lab is meant as a simple introduction, aiming to showcase just a glimpse of what you can achieve with Ansible. 
+
+To preface this, I wanted to mention my journey into IT has always been driven by an insatiable curiosity and a hunger to understand the tools and practices that shape our digital world. This lab, in particular, stems from my profound desire to constantly learn new things and technologies. 
+
+Not just to know how it functions but to understand its core principles and nuances. While there are numerous tutorials and courses, there's no better way to learn than by doing. By setting up this lab, I aim to practically apply Ansible concepts, experiment, make mistakes, learn, and gain a robust understanding of this remarkable automation tool. 
+
+Leveraging Linode as our cloud platform, we'll use Ansible to install and manage software across multiple virtual machines, taking you through each step of my exploration journey.
+
+. This lab is meant as a simple introduction, aiming to showcase just a glimpse of what you can achieve with Ansible. 
 
 
 
