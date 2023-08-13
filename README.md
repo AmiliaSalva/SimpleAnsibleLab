@@ -10,7 +10,7 @@ In my journey through IT automation, I've come to appreciate the elegance and po
 
 ## Objectives of the Lab:
   - **Introduction to Automation:** Demonstrate the importance and benefits of automation in the modern IT world. Showcase how tasks that traditionally took hours can be accomplished in minutes with a few scripts.
-  - **Hands-on with Ansible:** Dive deep into Ansible's capabilities. Understand how to set up a master node, write playbooks, and dispatch commands to worker nodes.
+  - **Hands-on with Ansible:** Understand how to set up a master node, write playbooks, and dispatch commands to worker nodes.
   - **Infrastructure as Code with Linode:** Highlight the agility and flexibility of cloud hosting with Linode. Learn to spin up, manage, and tear down virtual servers programmatically.
   - **SSH and Remote Management with Solar PuTTY:** Understand the basics of secure shell (SSH) connections and the convenience brought by tools like Solar PuTTY.
   - **Package Management with YUM:** Get acquainted with software package management on CentOS using YUM. Understand how software can be installed, updated, and removed seamlessly.
