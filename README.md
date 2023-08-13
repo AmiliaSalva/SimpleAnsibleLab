@@ -77,8 +77,7 @@ After deploying our control station on Linode, we initiate it with the following
 
 ### After this, two additional CentOS servers will be deployed, acting as our worker nodes:
  
-<details close>
-<summary>EXAMPLE:</summary>
+
  
   <br />
 
@@ -95,7 +94,7 @@ After deploying our control station on Linode, we initiate it with the following
 ![Linode Server Selection](https://github.com/AmiliaSalva/SimpleAnsibleLab/assets/132176058/848427c9-a4b0-4f2d-94cb-943cc5ac0599)
 
 
-</details>
+
 
 ## Configuration:
 
