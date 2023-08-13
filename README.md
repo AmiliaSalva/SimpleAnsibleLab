@@ -20,7 +20,7 @@ In today's rapidly evolving IT landscape, automation plays a pivotal role. Lever
         A leading open-source automation tool, Ansible is used to automate tasks such as software installations, configuration management, and even complex multi-tier application deployments.
 
   - **Linode:**
-        A versatile cloud hosting provider. For our lab, Linode provided the infrastructure, allowing us to spin up and manage virtual servers on-demand.
+        A versatile cloud hosting provider. For our lab, Linode provided the infrastructure, allowing us to spin up and manage virtual servers on-demand. For cost efficiency and given the nature of the lab, we deployed servers with Linode's most affordable plan, as our activities didn't demand extensive resources.
 
   - **CentOS:**
         A popular Linux distribution. Our virtual servers (both master and worker nodes) ran CentOS, providing a consistent environment for our automation tasks.
@@ -37,6 +37,34 @@ In today's rapidly evolving IT landscape, automation plays a pivotal role. Lever
 ## Lab Setup:
 
 For this lab, we've leveraged Linode to set up 3 cloud servers. One of these servers will act as the control station or "master", from which Ansible commands will be dispatched. The other two servers will be our "worker" nodes, which will receive commands and configurations from the master.
+
+
+ <br />
+
+### Configuring and Deploying the servers in Linode:
+ 
+<details close>
+<summary>EXAMPLE:</summary>
+ 
+  <br />
+
+- **Creating and Deploying Servers in Linode**
+  
+![Server Creation](https://github.com/AmiliaSalva/SimpleAnsibleLab/assets/132176058/b95f3c9e-3aa2-4fe4-a800-3538ec4e5ab7)
+  
+  <br />
+
+- **Configuring the server to the specifications needed for this lab.**
+
+   <br />
+   
+![Linode Server Selection](https://github.com/AmiliaSalva/SimpleAnsibleLab/assets/132176058/848427c9-a4b0-4f2d-94cb-943cc5ac0599)
+
+
+
+
+
+</details>
 
 ## Control Station Setup:
 
