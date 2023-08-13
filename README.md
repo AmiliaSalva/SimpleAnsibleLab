@@ -38,6 +38,10 @@ In today's rapidly evolving IT landscape, automation plays a pivotal role. Lever
 
 For this lab, we've leveraged Linode to set up 3 cloud servers. One of these servers will act as the control station or "master", from which Ansible commands will be dispatched. The other two servers will be our "worker" nodes, which will receive commands and configurations from the master.
 
+### The results should look like this:
+
+![overall Lab](https://github.com/AmiliaSalva/SimpleAnsibleLab/assets/132176058/b9546bdb-6a2b-4fe5-b938-da0f285f5d6b)
+
 
  <br />
 
