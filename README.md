@@ -4,7 +4,7 @@
 
 
 ## Introduction
-In today's rapidly evolving IT landscape, automation plays a pivotal role. Leveraging powerful tools and platforms can dramatically speed up tasks, ensure consistency, and reduce human error. In this lab, we took a deep dive into the world of automation using Ansible, orchestrated across multiple virtual servers on Linode. Let's highlight the technologies employed and outline the objectives of our lab.
+In today's rapidly evolving IT landscape, automation plays a pivotal role. Leveraging powerful tools and platforms can dramatically speed up tasks, ensure consistency, and reduce human error. This lab is meant as a simple introduction, aiming to showcase just a glimpse of what you can achieve with Ansible. 
 
 ## Objectives of the Lab:
   - **Introduction to Automation:** Demonstrate the importance and benefits of automation in the modern IT world. Showcase how tasks that traditionally took hours can be accomplished in minutes with a few scripts.
@@ -131,8 +131,7 @@ Configure group variables:
 <br />
  
 ### It should look something like this in the SSH client:
-<details close>
-<summary>EXAMPLE:</summary>
+
 
 
 ![sshclientexample](https://github.com/AmiliaSalva/SimpleAnsibleLab/assets/132176058/3f93b678-0468-4cb7-a746-d3184a913256)
@@ -140,7 +139,6 @@ Configure group variables:
 
 
 
-</details>
  <br />
  <br />
 
