@@ -4,7 +4,9 @@
 
 
 ## Introduction
-In today's rapidly evolving IT landscape, automation plays a pivotal role. Leveraging powerful tools and platforms can dramatically speed up tasks, ensure consistency, and reduce human error. This lab is meant as a simple introduction, aiming to showcase just a glimpse of what you can achieve with Ansible. 
+In my journey through IT automation, I've come to appreciate the elegance and power of Ansible with this lab. This lab is meant as a simple introduction, aiming to showcase just a glimpse of what you can achieve with Ansible. 
+
+
 
 ## Objectives of the Lab:
   - **Introduction to Automation:** Demonstrate the importance and benefits of automation in the modern IT world. Showcase how tasks that traditionally took hours can be accomplished in minutes with a few scripts.
@@ -45,30 +47,6 @@ For this lab, we've leveraged Linode to set up 3 cloud servers. One of these ser
 
  <br />
 
-### Configuring and Deploying the servers in Linode:
- 
-<details close>
-<summary>EXAMPLE:</summary>
- 
-  <br />
-
-- **Creating and Deploying Servers in Linode**
-  
-![Server Creation](https://github.com/AmiliaSalva/SimpleAnsibleLab/assets/132176058/b95f3c9e-3aa2-4fe4-a800-3538ec4e5ab7)
-  
-  <br />
-
-- **Configuring the server to the specifications needed for this lab.**
-
-   <br />
-   
-![Linode Server Selection](https://github.com/AmiliaSalva/SimpleAnsibleLab/assets/132176058/848427c9-a4b0-4f2d-94cb-943cc5ac0599)
-
-
-
-
-
-</details>
 
 ## Control Station Setup:
 
@@ -88,10 +66,31 @@ After deploying our control station on Linode, we initiate it with the following
 - `yum install epel-release -y`: Installs the EPEL (Extra Packages for Enterprise Linux) repository, providing extra packages for CentOS.
 - `yum install ansible -y`: Installs Ansible, our automation tool.
 
-    
-    
-After this, two additional CentOS servers will be deployed, which will act as our worker nodes.
-Configuration:
+
+
+### After this, two additional CentOS servers will be deployed, acting as our worker nodes:
+ 
+<details close>
+<summary>EXAMPLE:</summary>
+ 
+  <br />
+
+- **Creating and Deploying Servers in Linode**
+  
+![Server Creation](https://github.com/AmiliaSalva/SimpleAnsibleLab/assets/132176058/b95f3c9e-3aa2-4fe4-a800-3538ec4e5ab7)
+  
+  <br />
+
+- **Configuring the server to the specifications needed for this lab.**
+
+   <br />
+   
+![Linode Server Selection](https://github.com/AmiliaSalva/SimpleAnsibleLab/assets/132176058/848427c9-a4b0-4f2d-94cb-943cc5ac0599)
+
+
+</details>
+
+## Configuration:
 
 With the servers up and running, we'll use Solar PuTTY to SSH into the control station. Once logged in, navigate to the Ansible configuration directory:
 
@@ -201,4 +200,4 @@ This will install or ensure the latest version of nano is present on the worker 
 
 ## Conclusion:
 
-Congratulations! You've set up a basic Ansible environment with Linode, showcasing the automation of tasks across multiple servers. Automation, as seen, reduces manual efforts, ensures consistency, and speeds up operations. Happy automating!
+By integrating these technologies and outlining clear objectives, I aim to present a simple yet insightful peek into the realm of modern IT automation. With an emphasis on cost-effective learning, I took advantage of Linode's budget-friendly plans, ensuring that quality wasn't compromised. My aspiration is for you to walk away with a heightened curiosity about automation and the powerful tools behind it, especially Ansible.
