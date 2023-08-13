@@ -116,8 +116,8 @@ Within the ``hosts`` file:
  
 
       [linux]
-      192.168.1.1 
-      192.168.1.2
+      IP_ADDRESS_1
+      IP_ADDRESS_2
 
 Beneath this, paste the IP addresses of the two worker nodes.
 
