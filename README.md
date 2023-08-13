@@ -1,4 +1,4 @@
-# Ansible Automation Lab with Linode
+# Simple Ansible Automation Lab with Linode
 
 ![Dark Purple Technical Roadmap Brainstorm](https://github.com/AmiliaSalva/SimpleAnsibleLab/assets/132176058/42a5394e-409c-4b64-8b8f-77c8c5fea5f1)
 
