@@ -182,19 +182,21 @@ This retrieves and displays the OS details of the worker nodes.
 ![more ansible commands](https://github.com/AmiliaSalva/SimpleAnsibleLab/assets/132176058/36e4e458-92f6-4101-9441-ba28aa761276)
 
 
-## Using Playbooks:
+## Utilizing an Ansible Playbook:
 
-Playbooks let you orchestrate complex operations. For this lab, we've a simple playbook to ensure ``nano`` is installed:
+Playbooks are Ansible’s configuration, deployment, and orchestration language. For this lab, we'll set up a simple playbook to ensure ``nano`` is installed.
+
+### Create a new playbook using the following command:
 
 
-    vi iluvenano.yml
+    vi iluvnano.yml
 
-Insert:
+### Once created, insert the following YAML script:
 
 
     ---
     - name: iluvnano
-      hosts: centos
+      hosts: linux
       tasks:
         - name: ensure nano is there
           yum:
@@ -207,6 +209,17 @@ Insert:
     ansible-playbook iluvenano.yml
 
 This will install or ensure the latest version of nano is present on the worker nodes.
+
+## The results should look similar to this:
+
+![Screenshot 2023-08-13 at 09-40-56 ChatGPT](https://github.com/AmiliaSalva/SimpleAnsibleLab/assets/132176058/7d86cf5c-1b33-407d-92d8-258a0be00db4)
+
+- **Gathering Facts:** Ansible, by default, gathers facts about the remote hosts before executing any tasks. This phase collects information about the remote system, like its OS, IP addresses, memory stats, etc. Both servers (``linux_server_1`` and ``linux_server_2``) successfully responded.
+- **ensure nano is there:** For ``linux_server_1``, the changed status indicates that ``nano`` was either not present or not at the latest version, and Ansible took corrective action to ensure it is the latest.
+    For ``linux_server_2``, the ok status indicates that nano was already at the latest version, so no changes were made.
+- **PLAY RECAP:** This is a summary of what happened. The ``ok``, ``changed``, and other counters reflect the number of tasks that were executed, how many resulted in changes, if any were unreachable, etc.
+
+
 
 ## Conclusion:
 
