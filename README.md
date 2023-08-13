@@ -150,27 +150,37 @@ Remember to save and quit ``vi:`` Press ``Esc``, then type ``:wq``.
 
 ## Configuring Ansible:
 
-Edit ``ansible.cfg``:
+Edit ``ansible.cfg`` by using the following command:
 
     vi ansible.cfg
 
-Find the line ``#hostkey_checking=false`` and uncomment it. This will disable SSH host key checking for the lab (this is not recommended for production environments). Save and exit.
-Testing Connectivity:
+Find the line ``#hostkey_checking=false`` and uncomment it. This will disable SSH host key checking for the lab (this is not recommended for production environments, but for the purpose of this lab, it is fine.). Save and exit.
 
-## Test the configuration:
+## Testing Connectivity:
+
+### Test the configuration with the following command:
 
 
     ansible linux -m ping
 
 This pings the worker nodes to check if they're reachable.
 
-Verify OS details of worker nodes:
+### The results should look like this:
 
+![ansible ping](https://github.com/AmiliaSalva/SimpleAnsibleLab/assets/132176058/1adb5865-229c-4628-b957-087f896f23cb)
+
+
+## Verify OS details of worker nodes:
 
 
     ansible linux -a "cat /etc/os-release"
 
 This retrieves and displays the OS details of the worker nodes.
+
+### The results should look like this:
+
+![more ansible commands](https://github.com/AmiliaSalva/SimpleAnsibleLab/assets/132176058/36e4e458-92f6-4101-9441-ba28aa761276)
+
 
 ## Using Playbooks:
 
